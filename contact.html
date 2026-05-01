@@ -30,13 +30,20 @@
     <label for="message">Message</label>
     <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
 
-    <button type="submit">Send Message</button>
+<button type="button" onclick="sendMessage()">Send Message</button>  <p id="confirmation"></p>
   </form>
 
   <h3>Contact Info</h3>
   <p>Email: bridgeto@opportunity.com</p>
-  <p>Phone: 888-555-5555</p>
+  <p>Phone: 888-555-5555
+  </p>
   <p>Address: 12345 Phoenix Lane, Costa Mesa, AZ</p>
 </main>
+<script>
+function sendMessage() {
+  document.getElementById("confirmation").innerText =
+    "Your message has been sent! You will hear from an expert soon.";
+}
+</script>
 </body>
 </html>
